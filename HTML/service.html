@@ -43,27 +43,27 @@
     <!-- Header  -->
     <header>
       <div
-        class="header_content d-flex justify-content-around align-items-center"
+        class="header_content d-flex justify-content-around align-items-center mt-5"
       >
         <div class="header_logo">
-          <h1>
-            <a class="text-white" href="#">Diner</a>
-          </h1>
+          <h1>Diner</h1>
         </div>
-        <div class="header_form">
-          <form action="">
-            <input type="text" id="search here" placeholder="Search here.." />
-            <label for="">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </label>
-          </form>
-        </div>
-        <div class="header_sun">
-          <i class="fa-regular fa-sun"></i>
-        </div>
-        <div class="header_bars">
-          <i class="fa-solid fa-bars"></i>
-        </div>
+        <nav>
+          <div class="header_form">
+            <form action="">
+              <input type="text" id="search here" placeholder="Search here.." />
+              <label for="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </label>
+            </form>
+          </div>
+          <div class="header_sun">
+            <i class="fa-regular fa-sun fs-3 text-white ms-3 me-3"></i>
+          </div>
+          <div class="header_bars">
+            <i class="fa-solid fa-bars fs-1 text-white"></i>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -315,7 +315,6 @@
       </div>
     </section>
 
-    <!-- Footer  -->
     <footer>
       <div class="footer_content">
         <div class="footer_content1">
@@ -338,14 +337,16 @@
               </div>
             </div>
 
-            <div class="footer_item2">
-              <h2 class="text-white">Categories</h2>
-              <p>Drinks</p>
-              <p>Food</p>
-            </div>
-            <div class="footer_item3">
-              <h2 class="text-white">Archives</h2>
-              <p>March 2021</p>
+            <div class="footer_item_1line">
+              <div class="footer_item2">
+                <h2 class="text-white">Categories</h2>
+                <p>Drinks</p>
+                <p>Food</p>
+              </div>
+              <div class="footer_item3">
+                <h2 class="text-white">Archives</h2>
+                <p>March 2021</p>
+              </div>
             </div>
             <div class="footer_item4">
               <h2 class="text-white">Subscribe to our Newsletter</h2>
@@ -356,6 +357,7 @@
               <div class="item_4_form">
                 <form action="">
                   <input
+                    class="mb-4"
                     type="text"
                     id="email address"
                     placeholder="Your Email Address"
@@ -377,7 +379,6 @@
         </div>
       </div>
     </footer>
-
     <!-- Back To Top  -->
     <a href="#" id="back-to-top">
       <i class="fa-solid fa-arrow-up"></i>

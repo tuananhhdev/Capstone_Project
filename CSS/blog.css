@@ -280,7 +280,18 @@ footer .footer_content1 .footer_item4 .item_4_form input {
   border-radius: 9px;
   background-color: #232220;
   border: none;
-  /* margin-bottom: 20px; */
+}
+/* Back To Top  */
+#back-to-top {
+  background-color: #ff6600;
+  padding: 15px 20px;
+  border-radius: 50%;
+  color: white;
+  position: fixed;
+  right: 30px;
+  bottom: 70px;
+  transition: 1s;
+  display: none;
 }
 footer .footer_content1 .footer_item4 .item_4_form button {
   border: none;
