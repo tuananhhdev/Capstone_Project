@@ -8,6 +8,7 @@ html {
 }
 body {
   font-family: "Quicksand", sans-serif;
+  max-width: 100%;
 }
 
 /* css header  */
@@ -460,7 +461,7 @@ footer .footer_content2 .footer_copyright p span:hover {
   }
 
   footer .footer_item4 .item_4_form input {
-    padding: 20px 80px 20px 70px !important;
+    padding: 20px 100px 20px 70px !important;
     border-radius: 5px !important;
   }
   footer .footer_item4 .item_4_form input::placeholder {
