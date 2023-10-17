@@ -44,7 +44,73 @@ header nav .header_sun {
 }
 header nav .header_bars {
   transform: translateY(5px);
+  display: block;
+  cursor: pointer;
 }
+.menu li {
+  display: block;
+  padding: 10px 15px;
+}
+
+.menu_hamburger {
+  height: 100vh;
+  background: rgb(16 15 19 / 66%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  transition: 0.75s;
+  display: none;
+}
+.menu_hamburger li {
+  list-style-type: none;
+}
+.menu_hamburger li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu_hamburger a {
+  transform: translateY(100px);
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.header_bars {
+  display: none;
+}
+.menu_hamburger a:hover {
+  color: #ff6600;
+}
+.menu_hamburger .fa,
+.nav-links .fa {
+  display: block;
+  color: #fff;
+  margin: 10px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.menu_hamburger a {
+  color: #fff;
+}
+.menu_hamburger .fa-window-close {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px;
+  font-size: 40px;
+}
+.menu_hamburger i {
+  padding: 10px;
+}
+.menu_hamburger a:hover::after {
+  width: 50%;
+}
+
 /* css banner  */
 .banner {
   background-image: linear-gradient(
@@ -353,7 +419,7 @@ footer .footer_content2 .footer_copyright p span:hover {
 
 /* Responsive  */
 /* Mobile first  */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   header .header_logo h1 {
     transform: translateX(-50px) translateY(-20px);
   }
@@ -535,5 +601,21 @@ footer .footer_content2 .footer_copyright p span:hover {
   }
   #back-to-top {
     right: 70px;
+  }
+
+  .fa-bars {
+    margin-right: 10px;
+  }
+
+  .menu_hamburger a {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .menu_hamburger .fa-window-close {
+    font-size: 30px;
+    margin-right: 50px;
+  }
+  .menu_hamburger li {
+    margin-right: 50px;
   }
 }
