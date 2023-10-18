@@ -46,6 +46,7 @@ header nav .header_bars {
   transform: translateY(5px);
   display: block;
   cursor: pointer;
+
 }
 .menu li {
   display: block;
@@ -61,6 +62,8 @@ header nav .header_bars {
   right: 0;
   z-index: 2;
   display: none;
+  transition: all 0.4s;
+
 }
 .menu_hamburger li {
   list-style-type: none;
@@ -425,9 +428,11 @@ footer .footer_content2 .footer_copyright p span:hover {
   header .header_logo h1 {
     transform: translateY(10px) translateX(-40px);
   }
-
+  header .header_bars i {
+    transform: translateX(30px);
+  }
   header .header_sun i {
-    transform: translateY(-5px);
+    transform: translateY(-5px) translateX(20px);
   }
   .banner {
     height: 40vh;
