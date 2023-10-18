@@ -41,6 +41,71 @@ header nav .header_sun {
 }
 header nav .header_bars {
   transform: translateY(5px);
+  display: block;
+  cursor: pointer;
+}
+.menu li {
+  display: block;
+  padding: 10px 15px;
+}
+
+.menu_hamburger {
+  height: 100vh;
+  background: rgb(16 15 19 / 66%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: none;
+}
+.menu_hamburger li {
+  list-style-type: none;
+}
+.menu_hamburger li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.menu_hamburger a {
+  transform: translateY(100px);
+  padding: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.header_bars {
+  display: none;
+}
+.menu_hamburger a:hover {
+  color: #ff6600;
+}
+.menu_hamburger .fa,
+.nav-links .fa {
+  display: block;
+  color: #fff;
+  margin: 10px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.menu_hamburger a {
+  color: #fff;
+}
+.menu_hamburger .fa-window-close {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px;
+  font-size: 40px;
+}
+.menu_hamburger i {
+  padding: 10px;
+}
+.menu_hamburger a:hover::after {
+  width: 50%;
 }
 /* css banner  */
 .banner {
@@ -351,7 +416,7 @@ footer .footer_content2 .footer_copyright p span:hover {
     font-size: 25px;
   }
   .blogs .blogs_item_1 img:first-child {
-    width: 340px;
+    width: 365px;
     height: 450px;
   }
   .blogs .blogs_bottom_2 {
@@ -388,14 +453,14 @@ footer .footer_content2 .footer_copyright p span:hover {
   }
 
   footer .footer_item4 .item_4_form input {
-    padding: 20px 80px 20px 70px !important;
+    padding: 20px 115px 20px 70px !important;
     border-radius: 5px !important;
   }
   footer .footer_item4 .item_4_form input::placeholder {
     font-size: 15px !important;
   }
   footer .footer_item4 .item_4_form button {
-    padding: 20px 100px 20px 110px !important;
+    padding: 20px 100px 20px 140px !important;
     font-size: 18px !important;
     border-radius: 5px !important;
   }
@@ -451,12 +516,31 @@ footer .footer_content2 .footer_copyright p span:hover {
     margin-top: 10px !important;
   }
   footer .footer_item4 p {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   footer .footer_item_1line {
     display: flex;
   }
   footer .footer_item3 {
     margin-left: 80px;
+  }
+  #back-to-top {
+    right: 30px;
+  }
+
+  .fa-bars {
+    margin-right: 10px;
+  }
+
+  .menu_hamburger a {
+    padding: 10px;
+    font-size: 15px;
+  }
+  .menu_hamburger .fa-window-close {
+    font-size: 30px;
+    margin-right: 50px;
+  }
+  .menu_hamburger li {
+    margin-right: 50px;
   }
 }

@@ -10,3 +10,14 @@ function scrollFunction() {
     scrollButton.style.display = "none";
   }
 }
+
+// Hamburger Menu
+var toggleMenu = document.getElementById("menuswitch");
+
+function showMenu() {
+  toggleMenu.style.display = "block";
+}
+
+function hideMenu() {
+  toggleMenu.style.display = "none";
+}
