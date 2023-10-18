@@ -390,7 +390,8 @@ footer .footer_content2 .footer_copyright p span:hover {
   transition: 1s;
   display: none;
 }
-@media screen and (max-width: 767px) {
+/* 767 */
+@media screen and (max-width: 398px) {
   header .header_logo h1 {
     transform: translateX(-50px) translateY(-20px);
   }

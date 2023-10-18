@@ -46,7 +46,6 @@ header nav .header_bars {
   transform: translateY(5px);
   display: block;
   cursor: pointer;
-
 }
 .menu li {
   display: block;
@@ -63,7 +62,6 @@ header nav .header_bars {
   z-index: 2;
   display: none;
   transition: all 0.4s;
-
 }
 .menu_hamburger li {
   list-style-type: none;
